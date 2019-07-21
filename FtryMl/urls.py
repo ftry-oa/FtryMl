@@ -7,6 +7,7 @@ from .pages import uploadImg
  
 urlpatterns = [
     url(r'^upload_file$', uploadImg.upload_file),
+    url(r'^uploadFileJson$', uploadImg.uploadFileJson),
     url(r'^admin/', admin.site.urls),
     url(r'^$', r404.result),
 ]
