@@ -29,6 +29,7 @@ def upload_file(request):
 
 def uploadFileJson(request):
     context = {}
+    print('upload file json', request.method)
     if request.method == 'POST':
         form = UploadFileForm(request.POST, request.FILES)
         if form.is_valid():
