@@ -9,5 +9,5 @@ urlpatterns = [
     url(r'^ftryml/upload_file$', uploadImg.upload_file),
     url(r'^ftryml/uploadFileJson$', uploadImg.uploadFileJson),
     url(r'^admin/', admin.site.urls),
-    url(r'^$', r404.result),
+    url(r'^$', r404.redirectIndex),
 ]
